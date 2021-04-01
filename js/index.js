@@ -1,4 +1,3 @@
-const body = document.querySelector("body");
 const pageviewsRangeInput = document.querySelector("#pageviews");
 const billingmethodRangeInput = document.querySelector("#billing-method");
 const pageviewValueDiv = document.querySelector(".pageview-value");
