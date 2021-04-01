@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+@import url("//use.fontawesome.com/releases/v5.0.7/css/all.css");
+
+:root {
+	--primary-colour: rgb(41, 51, 86);
+	--secondary-colour: rgb(133, 143, 173);
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+body {
+	color: var(--secondary-colour);
+	font-family: "Manrope", Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1.4 rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.bg-pattern {
+	position: fixed;
+	background: url("../images/bg-pattern.svg") no-repeat;
+	background-position-x: left;
+	background-position-y: bottom;
+	background-size: cover;
+	width: 100vw;
+	height: 50vh;
+	z-index: -1;
+}
+
+.title-container {
+	background: url("../images/pattern-circles.svg") no-repeat;
+	background-position-x: center;
+	background-size: contain;
+	margin: 40px;
+	padding: 40px;
+	text-align: center;
+}
+
+.title-container h2 {
+	color: var(--primary-colour);
+}
+
+.title-container .intro {
+	font-size: 15px;
+}
+
+.card {
+	border-radius: 10px;
+	box-shadow: rgb(155, 155, 155) 5px 5px 20px;
+	background-color: rgb(255, 255, 255);
+	margin: 40px auto;
+	width: 600px;
+}
+
+.card .pageviews {
+	display: flex;
+	align-items: center;
+}
+
+.card .pageviews .pageview-value {
+	margin-right: 6px;
+}
+
+.card .pricing {
+	display: flex;
+	justify-content: space-between;
+	letter-spacing: 0.1rem;
+	padding: 40px;
+}
+
+.card .pricing .price {
+	display: flex;
+	align-items: center;
+}
+
+.card .pricing .price .price-value {
+	color: var(--primary-colour);
+	font-size: 2.4rem;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.card .pricing .pageviews {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.card .slider {
+	padding: 0 40px;
+}
+
+.card .slider input[type="range"] {
+	border-radius: 3px;
+	outline: none;
+	width: 100%;
+	height: 7px;
+}
+
+.card .slider input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	cursor: ew-resize;
+	width: 50px;
+	height: 50px;
+}
+
+.card .billing {
+	display: flex;
+	justify-content: center;
+	padding: 40px;
+	position: relative;
+}
+
+.card .billing .billing-method {
+	position: absolute;
+	width: 40px;
+}
+
+.card .billing .billing-method input[type="range"] {
+	width: 90%;
+}
+
+.card .billing .monthly {
+	position: absolute;
+	left: 0;
+	transform: translateX(135%);
+}
+
+.card .billing .yearly {
+	display: flex;
+	align-items: flex-start;
+	position: absolute;
+	right: 0;
+	transform: translateX(-33%);
+}
+
+.card .billing .discount {
+	background: rgb(254, 236, 231);
+	border-radius: 10px;
+	color: rgb(255, 140, 102);
+	font-size: 0.75rem;
+	margin-left: 1rem;
+	padding: 4px 6px;
+}
+
+.card .info {
+	border-top: 1px solid rgb(241, 240, 245);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px;
+}
+
+.card .info ul {
+	list-style-image: url("../images/icon-check.svg");
+	margin: 0;
+	padding-inline-start: 20px;
+}
+
+.card .info ul > li {
+	line-height: 2;
+	padding-left: 20px;
+}
+
+.card .info button {
+	border: none;
+	border-radius: 20px;
+	background: var(--primary-colour);
+	color: rgb(189, 204, 255);
+	cursor: pointer;
+	letter-spacing: 0.1rem;
+	padding: 15px 40px;
+	outline: none;
+	transition: background 0.25s ease-in-out;
+}
+
+.card .info button:hover {
+	background: rgb(2, 15, 59);
+	color: rgb(223, 230, 255);
+}
+
+footer .attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+footer .attribution a {
+	color: rgb(62, 82, 163);
+}
+
+#overlay {
+	background: rgba(41, 51, 86, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+}
+
+#overlay .message {
+	background: white;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	width: 300px;
+}
+
+#overlay.hide {
+	display: none;
+}

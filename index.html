@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<script src="./js/index.js" defer></script>
+
+		<title>Frontend Mentor | Interactive pricing component</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<div id="overlay" class="hide">
+			<div class="message">Thank you for signing up!</div>
+		</div>
+		<div class="bg-pattern"></div>
+		<main>
+			<div class="title-container">
+				<h2>Simple, traffic-based pricing</h2>
+
+				<div class="intro">
+					Sign-up for our 30-day trial. No credit card required.
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="pricing">
+					<div class="pageviews">
+						<span class="pageview-value"></span>PAGEVIEWS
+					</div>
+					<div class="price">
+						<span class="price-value"></span>/ month
+					</div>
+				</div>
+				<div class="slider">
+					<input
+						type="range"
+						name="pageviews"
+						id="pageviews"
+						min="1"
+						max="5"
+						value="3"
+					/>
+					<div class="selector">
+						<div class="select-btn"></div>
+					</div>
+				</div>
+				<div class="billing">
+					<div class="monthly">Monthly Billing</div>
+					<div class="billing-method">
+						<input
+							type="range"
+							name="billing-method"
+							id="billing-method"
+							min="0"
+							max="1"
+							value="0"
+						/>
+					</div>
+					<div class="yearly">
+						Yearly Billing
+						<span class="discount">25% discount</span>
+					</div>
+				</div>
+				<div class="info">
+					<div class="info-list">
+						<ul>
+							<li>Unlimited websites</li>
+							<li>100% data ownership</li>
+							<li>Email reports</li>
+						</ul>
+					</div>
+					<div class="cta">
+						<button class="start">Start my trial</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="attribution">
+				Challenge by
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+				>
+					Frontend Mentor </a
+				>. Coded by
+				<a href="https://github.com/szpatrikrichard">Richárd Szilágyi</a
+				>.
+			</div>
+		</footer>
+	</body>
+</html>
