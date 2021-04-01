@@ -208,7 +208,7 @@ footer .attribution a {
 	color: rgb(62, 82, 163);
 }
 
-#overlay {
+.overlay {
 	background: rgba(41, 51, 86, 0.8);
 	display: flex;
 	align-items: center;
@@ -219,7 +219,7 @@ footer .attribution a {
 	z-index: 1;
 }
 
-#overlay .message {
+.overlay .message {
 	background: white;
 	border-radius: 10px;
 	display: flex;
@@ -229,6 +229,47 @@ footer .attribution a {
 	width: 300px;
 }
 
-#overlay.hide {
+.overlay.hide {
 	display: none;
+}
+
+@media (max-width: 768px) {
+	.title-container {
+		margin: 10px;
+		padding: 20px;
+	}
+
+	.card {
+		width: 90%;
+	}
+
+	.card .pricing {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card .pricing .price {
+		margin-top: 20px;
+	}
+
+	.card .billing .monthly {
+		transform: translateX(50%);
+	}
+
+	.card .billing .yearly {
+		transform: translateX(-10%);
+	}
+
+	.card .info {
+		flex-direction: column;
+	}
+
+	.card .info {
+		text-align: center;
+	}
+
+	.card .info button {
+		margin-top: 20px;
+		width: 100%;
+	}
 }

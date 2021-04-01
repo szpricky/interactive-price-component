@@ -4,7 +4,7 @@ const billingmethodRangeInput = document.querySelector("#billing-method");
 const pageviewValueDiv = document.querySelector(".pageview-value");
 const priceValueDiv = document.querySelector(".price-value");
 const startBtn = document.querySelector(".start");
-const overlay = document.querySelector("#overlay");
+const overlay = document.querySelector(".overlay");
 
 window.addEventListener("load", () => {
 	pageviewValueDiv.innerHTML = pageviewsFromInput();
